@@ -21,7 +21,7 @@
 
 ;;; Commentary:
 
-;; Org-Babel support for the Pascal programming language (using fpc).
+;; Org-Babel support for the Pascal evaluation (using fpc).
 
 ;;; Code:
 (require 'ob)
@@ -33,8 +33,6 @@
   "Name of the pascal compiler (free pascal compiler).")
 
 (defun org-babel-execute:pascal (body params)
-  ; (cdr (assoc :strange params))
-
   (let* ((tmp-src-file (org-babel-temp-file "pascal-src-" ".pas" ))
          (tmp-bin-file (org-babel-temp-file "pascal-bin-" org-babel-exeext))
          (cmdline (cdr (assoc :cmdline params)))
