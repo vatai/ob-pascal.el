@@ -1,3 +1,12 @@
 * ob-pascal.el
 
-org-bable pascal evaluation module
+=org-bable= pascal evaluation module.
+
+* Installation
+Copy the file to your org folder where the other ~ob-LANG.el~
+(LANG=C,python,etc.) files are (and I guess you should byte compile it
+too).  Then in you're ~.emacs~ file (or init file of choice) add
+~(pascal . t)~ to the ~org-bable-load-languages~ list.
+
+* Development notes
+This file is made from ~ob-java.el~ and ~ob-C.el~.

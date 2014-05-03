@@ -56,6 +56,7 @@
 		     (mapconcat 'identity
 				(if (listp flags) flags (list flags)) " ")
 		     (org-babel-process-file-name tmp-src-file)) ""))))
+    ;; This was copied from ob-C.el as is, did not yet check what it does
     (let ((results
            (org-babel-trim
             (org-babel-eval
@@ -73,6 +74,4 @@
     ))
 (provide 'ob-pascal)
 
-
-
-;;; ob-java.el ends here
+;;; ob-pascal.el ends here
