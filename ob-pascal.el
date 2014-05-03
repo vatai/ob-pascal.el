@@ -21,17 +21,13 @@
 
 ;;; Commentary:
 
-;; 
+;; Org-Babel support for the Pascal programming language (using fpc).
 
 ;;; Code:
 (require 'ob)
 
 (defvar org-babel-tangle-lang-exts)
 (add-to-list 'org-babel-tangle-lang-exts '("pascal" . "pas"))
-
-;; TODO what do I do with this
-(defvar org-babel-pascal-command ""
-  "Name of the pascal command.")
 
 (defvar org-babel-pascal-compiler "fpc"
   "Name of the pascal compiler (free pascal compiler).")
